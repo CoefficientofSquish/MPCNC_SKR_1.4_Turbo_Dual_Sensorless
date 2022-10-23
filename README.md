@@ -19,6 +19,6 @@ Some info about the .bin file:
 
 -----------------------------------------------------------------------------------------------------------------------
 
-I'm including the configuration.h, configuration_adv.h and pins_BTT_SKR_common.h files in case anybody needs to modify for their own purposes and I'll do my best to update them as new versions of Marlin are released.  If you do need to compile your own make sure you use all three files or the pin assignments won't be right for the laser.  It should still work but you'll connect your laser to the default Fan0 pin instead of the extruder pin.   
+I'm including the configuration.h, configuration_adv.h and pins_BTT_SKR_common.h files in case anybody needs to modify for their own purposes and I'll do my best to update them as new versions of Marlin are released.  If you do need to compile your own make sure you use all three files or the pin assignments won't be right for the laser.  It should still work but you'll connect your laser to the default Fan0 pin instead of the extruder pin (and probably burn up your fan mosfet, at which point you'll definitely have to recompile using my pins file or reassign them yourself).   
 
 If you use these configurations please let me know how they worked for you, or if you have any problems with it.  So far everything seems to be working properly with my build.
