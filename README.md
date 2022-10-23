@@ -11,7 +11,7 @@ Some info about the .bin file:
 
 -X and Y endstops are active for both motors on each axis, dual endstops.  The stallguard sensitivity is set to 80 which is pretty high, but has triggered pretty accurately for me.
 
--M3/M5 Spindle enabled with RPM speed (0-30,000) rather than PWM (0-255). PWM_ENA_PIN and PWM_PIN are set to the same pin with no PWM_DIR_PIN, since I don't need to be able to change my spindle direction.  Wire spindle +/- to hotbed +/- pins according to BTT diagram and use M3 S(0-30000)/M5 to control spindle speed.  So far it is cutting with no issue, as long as you ramp it up at the start of a job by giving command M3 (no arguments) and then bring it up to full speed after some delay from within your G-Code (M3 S30000). 
+-M3/M5 Spindle enabled with RPM speed (0-30,000) rather than PWM (0-255). PWM_ENA_PIN and PWM_PIN are set to the same pin (2_05) with no PWM_DIR_PIN, since I don't need to be able to change my spindle direction.  Wire spindle +/- to hotbed +/- pins according to BTT diagram and use M3 S(0-30000)/M5 to control spindle speed.  So far it is cutting with no issue, as long as you ramp it up at the start of a job by giving command M3 (no arguments) and then bring it up to full speed after some delay from within your G-Code (M3 S30000). 
 
 -Asynchronous Laser mode enabled for 2-wire PWM lasers, connect to Heater 1 according to BTT diagram and control laser with M106 S(0-255)/M107.  Pins for Fan0 and Heater1 are swapped because I burned up my fan MOSFET, probably with the laser, and its probably just a better idea to use that MOSFET for the laser anyway, even if you haven't burned yours up yet.
 
@@ -19,11 +19,6 @@ Some info about the .bin file:
 
 -----------------------------------------------------------------------------------------------------------------------
 
-I'm including the configuration.h and configuration_adv.h files in case anybody needs to modify for their own purposes and I'll do my best to update them as new versions of Marlin are released.  There may be a better way of doing that but this is one of my first projects of this kind so feel free to point me in the right direction if you're more experienced and know a better way.   
+I'm including the configuration.h, configuration_adv.h and pins_BTT_SKR_common.h files in case anybody needs to modify for their own purposes and I'll do my best to update them as new versions of Marlin are released.  If you do need to compile your own make sure you use all three files or the pin assignments won't be right for the laser.  It should still work but you'll connect your laser to the default Fan0 pin instead of the extruder pin.   
 
 If you use these configurations please let me know how they worked for you, or if you have any problems with it.  So far everything seems to be working properly with my build.
-
-
-
--------------------------------------------------------------------------------------------------------------------------
-
