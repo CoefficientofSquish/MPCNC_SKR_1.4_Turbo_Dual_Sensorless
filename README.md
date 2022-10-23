@@ -12,7 +12,7 @@ Some info about the .bin file:
 
 -M3/M5 Spindle enabled with RPM speed (0-30,000) rather than PWM (0-255). PWM_ENA_PIN and PWM_PIN are set to the same pin with no PWM_DIR_PIN, since I don't need to be able to change my spindle direction.  Wire spindle +/- to hotbed +/- pins according to BTT diagram and use M3 S(0-30000)/M5 to control spindle speed.  So far it is cutting with no issue, as long as you ramp it up at the start of a job by giving command M3 (no arguments) and then bring it up to full speed after some delay from within your G-Code (M3 S30000). 
 
--Asynchronous Laser mode enabled for 2-wire PWM lasers, connect to "CNC Fan" according to BTT diagram and control laser with M106 S(0-255)/M107.
+-Asynchronous Laser mode enabled for 2-wire PWM lasers, connect to "Fan0" or "CNC Fan" according to BTT diagram and control laser with M106 S(0-255)/M107.
 
 -G29 Auto Bed Leveling enabled (Bilinear).  Make sure touchplate or Z Probe is connected and G29 P1 will create a mesh of your build surface with 16 points, just like on a 3D Printer.  You will need to follow the spindle or tool around with the touchplate to each of the 16 probing points or use a plate large enough to cover the whole build surface.  I used the side piece of a desktop PC enclosure as one big touchplate but I still had to move it around for a few of the points because my build surface is 480mmx360mm.
 
