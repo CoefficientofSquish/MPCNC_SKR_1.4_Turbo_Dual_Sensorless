@@ -1,7 +1,8 @@
 # MPCNC_SKR_1.4_Turbo_Dual_Sensorless
 Marlin firmware for MPCNC Primo with BTT SKR 1.4 Turbo, TMC 2209 stepper drivers, and dual sensorless homing
 
- 
+ ![SKR1 4_T_Markup](https://user-images.githubusercontent.com/77234250/197414940-23d065cf-c6c3-494d-aec5-0d1fe1516a99.png)
+
 -----------------------------------------------------------------------
 Some info about the .bin file:
 
