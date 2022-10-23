@@ -24,4 +24,5 @@ If you use these configurations please let me know how they worked for you, or i
 build.
 
 
-[SKR1.4_T_Markup.pdf](https://github.com/CoefficientofSquish/MPCNC_SKR_1.4_Turbo_Dual_Sensorless/files/9847356/SKR1.4_T_Markup.pdf)
+
+![SKR1 4_T_Markup](https://user-images.githubusercontent.com/77234250/197413440-79cb0b36-a26a-46fe-9484-e3c8064501b6.png)
