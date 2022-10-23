@@ -18,6 +18,6 @@ Some info about the .bin file:
 
 -----------------------------------------------------------------------------------------------------------------------
 
-I'm including the configuration.h and configuration_adv.h files in case anybody needs to modify for their own purposes and I'll do my best to update them as new versions of Marlin are released.  There may be a better way of doing that but this is one of the first things like this so feel free to point me in the right direction if you're more experienced.   
+I'm including the configuration.h and configuration_adv.h files in case anybody needs to modify for their own purposes and I'll do my best to update them as new versions of Marlin are released.  There may be a better way of doing that but this is one of my first projects of this kind so feel free to point me in the right direction if you're more experienced and know a better way.   
 
 If you use these configurations please let me know how they worked for you, or if you have any problems with it.  So far everything seems to be working properly with my build.
